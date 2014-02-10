@@ -10,6 +10,7 @@
   {:username (prop/get-system-property "xmpp.username")
    :password (prop/get-system-property "xmpp.password")
    :host (prop/get-system-property "xmpp.host")
+   :domain (prop/get-system-property "xmpp.domain")
    :port (Integer/parseInt (prop/get-system-property "xmpp.port"))})
 
 (defn create-bot
